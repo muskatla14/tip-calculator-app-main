@@ -1,44 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  Bill
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center align-content-center h-100"
+    >
+      <img class="logo mx-auto d-block" src="images/logo.svg" alt="" />
+      <div id="app" class="row gx-5 m-auto my-5 p-4 rounded-4 w-50">
+        <!-- lEFT SIDE -->
+        <div class="left col-6 rounded-4" style="padding-left: 0">
+          <div class="row">
+            <p>Bill</p>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" style="height: 100%">
+                  <img src="images/icon-dollar.svg" alt="" />
+                </span>
+              </div>
+              <input type="text" class="form-control text-end" />
+            </div>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="row"></div>
+            <p style="margin-bottom: 0rem">Select Tip %</p>
+            <div class="col-4">
+              <button class="btn btn-primary w-100">5%</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary w-100">10%</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary w-100">15%</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary w-100">25%</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary w-100">50%</button>
+            </div>
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Custom"
+                aria-label="Custom"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <p class="mb-1">Number of People</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="height: 100%">
+                <img src="images/icon-person.svg" alt="" />
+              </span>
+            </div>
+            <input type="text" class="form-control text-end" />
+          </div>
+        </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- RIGHT SIDE -->
+        <div
+          class="col-6 right rounded-4 align-items-center d-flex flex-column justify-content-between pt-4 pb-4"
+        >
+          <div class="row justify-content-center">
+            <div class="row px-0">
+              <div class="col">
+                <p class="mb-0">Tip Amount</p>
+                <small>/ person</small>
+              </div>
+              <div class="col">
+                <h1>$4.27</h1>
+              </div>
+            </div>
+            <div class="row px-0">
+              <div class="col">
+                <p class="mb-0">Total</p>
+                <small>/ person</small>
+              </div>
+              <div class="col">
+                <h1>$32.79</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="width: 100%">
+            <button
+              id="resetBtn"
+              class="btn btn-primary btn-block border-0 text-uppercase"
+              type="submit"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+  </body>
 </html>
+
+<div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Your Name Here</a>. -->
+</div>

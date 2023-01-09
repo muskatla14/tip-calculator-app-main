@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+
+:root {
+--strong-cyan: hsl(172, 67%, 45%);
+--very-dark-cyan: hsl(183, 100%, 15%);
+--dark-grayish-cyan: hsl(186, 14%, 43%);
+--grayish-cyan: hsl(184, 14%, 56%);
+--light-grayish-cyan: hsl(185, 41%, 84%);
+--very-light-grayish-cyan: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+}
+
+html, body {
+    font-family: 'Space Mono', monospace;
+    background: hsl(184, 14%, 56%);
+    background: var(--light-grayish-cyan);
+    height: 100%;
+}
+
+
+#app {
+    background: var(--white);
+}
+
+.btn-primary {
+    background-color: var(--very-dark-cyan);
+    color: #fff!important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan)!important;
+}
+
+p {
+    font-size: small;
+}
+
+small {
+    color: var(--dark-grayish-cyan);
+    font-size: smaller;
+}
+
+h1 {
+    color: var(--strong-cyan);
+}
+
+#resetBtn {
+    background-color: var(--strong-cyan)!important;
+    color: var(--very-dark-cyan)!important;   
+    background-color: var(--light-grayish-cyan);
+}
+
+#resetBtn:hover {
+    background-color: var(--light-grayish-cyan)!important;
+    /* color: var(--very-dark-cyan)!important;; */
+}
+
+.left { 
+    background-color: var(--white);
+    color: var(--grayish-cyan);
+}
+
+.right {
+    background: var(--very-dark-cyan);
+    color: var(--white);
+}
