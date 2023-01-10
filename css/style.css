@@ -68,3 +68,25 @@ h1 {
     background: var(--very-dark-cyan);
     color: var(--white);
 }
+
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: flex-start!important;
+        gap: 2rem;
+    }
+
+    .logo {
+        margin-top: 2rem!important;
+    }
+  
+    #app {
+        width: 100%!important;
+        margin: 0!important;
+    }
+    
+    .right {
+        gap: 1rem;
+    };
+
+ }
